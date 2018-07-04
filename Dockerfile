@@ -13,6 +13,6 @@ RUN git clone https://github.com/stevenlovegrove/Pangolin.git && \
 RUN git clone https://github.com/Magical-Chicken/ORB_SLAM2.git && \
     cd ORB_SLAM2 && ./build.sh && \
     ROS_PACKAGE_PATH="${ROS_PACKAGE_PATH}:/ORB_SLAM2/Examples/ROS/ORB_SLAM2" \
-    ./build_ros.sh
+    /ros_entrypoint.sh ./build_ros.sh
 
 WORKDIR /ORB_SLAM2/
