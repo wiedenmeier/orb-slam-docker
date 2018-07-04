@@ -1,4 +1,4 @@
-FROM ros:melodic-ros-core
+FROM ros:melodic
 
 # base deps
 RUN apt-get update && apt-get install -y libglew-dev libopencv-dev \
