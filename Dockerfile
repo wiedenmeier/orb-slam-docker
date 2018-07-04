@@ -1,8 +1,9 @@
 FROM ros:melodic-ros-core
 
 # base deps
-RUN apt-get update && apt-get install libglew-dev libopencv-dev libeigen3-dev \
-    ros-melodic-tf ros-melodic-image-transport ros-melodic-cv-bridge
+RUN apt-get update && apt-get install -y libglew-dev libopencv-dev \
+    libeigen3-dev ros-melodic-tf ros-melodic-image-transport \
+    ros-melodic-cv-bridge
 
 # pangolin
 RUN git clone https://github.com/stevenlovegrove/Pangolin.git && \
